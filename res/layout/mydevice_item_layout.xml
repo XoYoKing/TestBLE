@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/deviceinfo_item_height"
+    android:minHeight="@dimen/deviceinfo_item_height" >
+
+    <ImageView
+        android:id="@+id/zhentou_img_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/device_01" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/zhentou_img_icon"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/devices_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="智能枕头"
+            android:textColor="@color/text_color_list_item_lt"
+            android:textSize="@dimen/text_size_list_item_lt" />
+
+        <View
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:background="#00000000" />
+
+        <TextView
+            android:id="@+id/devices_connect_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="未连接"
+            android:textColor="@color/text_color_list_item_lb"
+            android:textSize="@dimen/text_size_list_item_lb" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/arrow_img_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/arrow_right_list_white"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/devices_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="3dp"
+        android:layout_toLeftOf="@id/arrow_img_right"
+        android:gravity="center_vertical"
+        android:text="未绑定"
+        android:textColor="@color/text_color_list_item_r"
+        android:textSize="@dimen/text_size_list_item_r" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_jb_height_device"
+        android:layout_marginLeft="@dimen/jg_list_item_l"
+        android:layout_toLeftOf="@id/arrow_img_right"
+        android:layout_marginRight="3dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/text_color_list_item_r" />
+
+</RelativeLayout>

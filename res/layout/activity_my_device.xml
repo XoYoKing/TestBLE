@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud" >
+
+    <include layout="@layout/view_titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120px"
+        android:layout_marginBottom="250px"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/act_my_device_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:listSelector="@android:color/transparent" >
+
+        </ListView>
+    </LinearLayout>
+
+    <!-- 
+            android:divider="@drawable/line_jb_bg_shape"
+            android:dividerHeight="@dimen/line_jb_height"
+     -->
+    <Button
+        android:id="@+id/buttonAddDevice"
+        android:layout_width="@dimen/button_bottom_w"
+        android:layout_height="@dimen/button_bottom_h"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/button_bottom_margin_bottom"
+        android:background="#00000000"
+        android:text="@string/mydevice_add"
+        android:textColor="@color/text_color_button_bottom"
+        android:textSize="@dimen/text_size_button_bottom" />
+    
+    <Button
+        android:id="@+id/buttonQuXiao"
+        android:layout_width="@dimen/button_bottom_w"
+        android:layout_height="@dimen/button_bottom_h"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/button_bottom_margin_bottom"
+        android:background="#00000000"
+        android:text="@string/mydevice_cancel"
+        android:textColor="@color/text_color_button_bottom"
+        android:textSize="@dimen/text_size_button_bottom" />
+
+    <Button
+        android:id="@+id/buttonDelDevice"
+        android:layout_width="@dimen/button_bottom_w"
+        android:layout_height="@dimen/button_bottom_h"
+        android:layout_above="@id/buttonQuXiao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="#00000000"
+        android:text="@string/mydevice_remove"
+        android:textColor="@color/text_color_button_bottom"
+        android:textSize="@dimen/text_size_button_bottom" />
+    
+    <Button
+        android:id="@+id/buttonSyncDevice"
+        android:layout_width="@dimen/button_bottom_w"
+        android:layout_height="@dimen/button_bottom_h"
+        android:layout_above="@id/buttonDelDevice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="#00000000"
+        android:text="@string/mydevice_sync"
+        android:textColor="@color/text_color_button_bottom"
+        android:textSize="@dimen/text_size_button_bottom" />
+    
+</RelativeLayout>

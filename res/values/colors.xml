@@ -1,0 +1,12 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="text_color_button_bottom">#FA2D65</color><!-- 250,45,101 -->
+    <color name="text_color_top_title">#FFFFFF</color>
+    <color name="text_color_list_item_l">#FFFFFF</color>
+    <color name="text_color_list_item_lt">#FFFFFF</color>
+    <color name="text_color_list_item_lb">#A6AAB3</color><!-- 166,170,179 -->
+    <color name="text_color_list_item_m">#A6AAB3</color><!-- 166,170,179 -->
+    <color name="text_color_list_item_r">#FFFFFF</color>
+    
+</resources>

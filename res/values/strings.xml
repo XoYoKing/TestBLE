@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TestBLE</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="state_connected">状态：已连接</string>
+    <string name="state_disconnected">状态：未连接</string>
+    <string name="connected">连接</string>
+    <string name="disconnected">断开</string>
+    <string name="scanning">扫描中...</string>
+    <string name="connecting">连接中...</string>
+    <string name="disconnecting">正在断开...</string>
+    <string name="dev_conn_number">设备连接数量：</string>
+    <!-- mydevice string -->
+    <string name="mydevice_unbind">未绑定</string>
+    <string name="mydevice_bind">解除绑定</string>
+    <string name="smart_pillow">智能枕头</string>
+    <string name="scan_bluetooth">搜索设备</string>
+    <string name="mydevice_connected">已连接</string>
+    <string name="mydevice_isconnecting">正在连接...</string>
+    <string name="mydevice_unconnected">未连接</string>
+    <string name="mydevice_add">添加设备</string>
+    <string name="mydevice_cancel">取消</string>
+    <string name="mydevice_remove">移除连接</string>
+    <string name="mydevice_sync">同步数据</string>
+    <string name="mydevice_notinrange">不在范围内</string>
+    <string name="mydevice_confirm_unbind">是否删除或解除绑定？</string>    
+</resources>

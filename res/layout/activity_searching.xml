@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/view_titlebar" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp" >
+            <ImageView
+                android:id="@+id/imageViewSearchScanStart1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:src="@drawable/search" />
+            <com.wt.testble.RadarImageView
+                android:id="@+id/imageViewSearchScanStart2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:src="@drawable/search2" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="76px"
+            android:text="search_hint"
+            android:textColor="#FFFFFF"
+            android:textSize="32.01px"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/text_color_button_bottom" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px"
+            android:layout_marginTop="50px"
+            android:layout_marginBottom="50px"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.确认智能止鼾枕与枕边设备之间连接完好；"
+                android:textColor="#A6AAB3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="2.枕边设备已与适配器连接；"
+                android:textColor="#A6AAB3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="3.适配器已接通家用电源"
+                android:textColor="#A6AAB3" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/text_color_button_bottom" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewStartStopSearch"
+        android:layout_width="@dimen/button_bottom_w"
+        android:layout_height="@dimen/button_bottom_h"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/button_bottom_margin_bottom"
+        android:gravity="center"
+        android:text="search_cancle"
+        android:textColor="@color/text_color_button_bottom"
+        android:textSize="@dimen/text_size_button_bottom"/>
+
+</RelativeLayout>
